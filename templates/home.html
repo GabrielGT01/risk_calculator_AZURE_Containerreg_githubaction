@@ -1,0 +1,135 @@
+
+<html>
+<html>
+<head>
+    <title>Loan Risk Score Prediction</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Loan Risk Score Prediction</h1>
+
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+            <h2>Enter Customer Data</h2>
+
+            <label>Age:</label>
+            <input type="number" name="Age" required><br>
+
+            <label>Annual Income:</label>
+            <input type="number" name="AnnualIncome" step="0.01" required><br>
+
+            <label>Credit Score:</label>
+            <input type="number" name="CreditScore" step="0.01" required><br>
+
+            <label>Employment Status:</label>
+            <select name="EmploymentStatus" required>
+                <option disabled selected value="">Select</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Self-Employed">Self-Employed</option>
+            </select><br>
+
+            <label>Education Level:</label>
+            <select name="EducationLevel" required>
+                <option disabled selected value="">Select</option>
+                <option value="High School">High School</option>
+                <option value="Associate">Associate</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Master">Master</option>
+                <option value="Doctorate">Doctorate</option>
+            </select><br>
+
+            <label>Experience (years):</label>
+            <input type="number" name="Experience" required><br>
+
+            <label>Loan Amount:</label>
+            <input type="number" name="LoanAmount" step="0.01" required><br>
+
+            <label>Loan Duration (months):</label>
+            <input type="number" name="LoanDuration" required><br>
+
+            <label>Marital Status:</label>
+            <select name="MaritalStatus" required>
+                <option disabled selected value="">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+            </select><br>
+
+            <label>Number of Dependents:</label>
+            <input type="number" name="NumberOfDependents" required><br>
+
+            <label>Home Ownership Status:</label>
+            <select name="HomeOwnershipStatus" required>
+                <option disabled selected value="">Select</option>
+                <option value="Own">Own</option>
+                <option value="Rent">Rent</option>
+                <option value="Mortgage">Mortgage</option>
+            </select><br>
+
+            <label>Credit Card Utilization Rate:</label>
+            <input type="number" name="CreditCardUtilizationRate" step="0.01" min="0" max="1" required><br>
+
+            <label>Number of Open Credit Lines:</label>
+            <input type="number" name="NumberOfOpenCreditLines" required><br>
+
+            <label>Number of Credit Inquiries:</label>
+            <input type="number" name="NumberOfCreditInquiries" required><br>
+
+            <label>Bankruptcy History:</label>
+            <input type="number" name="BankruptcyHistory" required><br>
+
+            <label>Loan Purpose:</label>
+            <select name="LoanPurpose" required>
+                <option disabled selected value="">Select</option>
+                <option value="Debt Consolidation">Debt Consolidation</option>
+                <option value="Home Improvement">Home Improvement</option>
+                <option value="Education">Education</option>
+                <option value="Medical">Medical</option>
+                <option value="Personal">Personal</option>
+            </select><br>
+
+            <label>Previous Loan Defaults:</label>
+            <input type="number" name="PreviousLoanDefaults" required><br>
+
+            <label>Payment History Score:</label>
+            <input type="number" name="PaymentHistory" step="0.01" min="0" max="1" required><br>
+
+            <label>Length of Credit History:</label>
+            <input type="number" name="LengthOfCreditHistory" step="0.01" required><br>
+
+            <label>Savings Account Balance:</label>
+            <input type="number" name="SavingsAccountBalance" step="0.01" required><br>
+
+            <label>Checking Account Balance:</label>
+            <input type="number" name="CheckingAccountBalance" step="0.01" required><br>
+
+            <label>Total Assets:</label>
+            <input type="number" name="TotalAssets" step="0.01" required><br>
+
+            <label>Total Liabilities:</label>
+            <input type="number" name="TotalLiabilities" step="0.01" required><br>
+
+            <label>Utility Bills Payment History:</label>
+            <input type="number" name="UtilityBillsPaymentHistory" step="0.01" min="0" max="1" required><br>
+
+            <label>Job Tenure (years):</label>
+            <input type="number" name="JobTenure" required><br>
+
+            <label>Interest Rate:</label>
+            <input type="number" name="InterestRate" step="0.01" min="0" max="100" required><br>
+
+            <label>Monthly Loan Payment:</label>
+            <input type="number" name="MonthlyLoanPayment" step="0.01" required><br>
+
+            <label>Total Debt To Income Ratio:</label>
+            <input type="number" name="TotalDebtToIncomeRatio" step="0.01" min="0" max="1" required><br>
+
+            <br>
+            <input type="submit" value="Predict Risk Score">
+        </form>
+
+        <h2>Predicted Risk Score: {{ results }}</h2>
+    </div>
+</body>
+</html>
+

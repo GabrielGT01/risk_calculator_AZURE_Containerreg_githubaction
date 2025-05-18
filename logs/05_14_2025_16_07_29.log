@@ -1,0 +1,11 @@
+[ 2025-05-14 16:07:30,249 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2025-05-14 16:07:31,173 ] 37 root - INFO - Entered the data ingestion method or components
+[ 2025-05-14 16:07:31,244 ] 47 root - INFO - Loaded dataset with 20000 rows and 36 columns
+[ 2025-05-14 16:07:31,460 ] 60 root - INFO - Train test split initiated
+[ 2025-05-14 16:07:31,460 ] 61 root - INFO - Performing train-test split
+[ 2025-05-14 16:07:31,650 ] 66 root - INFO - Saved training data with 16000 rows to artifacts/train.csv
+[ 2025-05-14 16:07:31,694 ] 69 root - INFO - Saved testing data with 4000 rows to artifacts/test.csv
+[ 2025-05-14 16:07:31,694 ] 71 root - INFO - Ingestion of the data is completed
+[ 2025-05-14 16:07:31,743 ] 104 root - INFO - Read train and test data completed
+[ 2025-05-14 16:07:31,743 ] 106 root - INFO - Obtaining preprocessing object
+[ 2025-05-14 16:07:31,745 ] 121 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.

@@ -1,0 +1,5 @@
+[ 2025-05-14 14:06:07,081 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2025-05-14 14:06:07,934 ] 35 root - INFO - Entered the data ingestion method or components
+[ 2025-05-14 14:06:08,003 ] 45 root - INFO - Loaded dataset with 20000 rows and 36 columns
+[ 2025-05-14 14:06:08,284 ] 53 root - INFO - Train test split initiated
+[ 2025-05-14 14:06:08,284 ] 54 root - INFO - Performing train-test split
